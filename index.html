@@ -5,15 +5,15 @@
   <title>Chrome'da Açılıyor...</title>
   <script>
     function openInChrome() {
-      var url = "https://dioraff.site/links/?btag=2334604";
+      var url = "https://www.diorlink.com/links/?btag=2334604";
       var ua = navigator.userAgent.toLowerCase();
 
       if (ua.indexOf("android") > -1) {
         // Android: Chrome ile açmayı dene
-        window.location.href = "intent://dioraff.site/links/?btag=2334604#Intent;scheme=https;package=com.android.chrome;end;";
+        window.location.href = "intent://www.diorlink.com/links/?btag=2334604#Intent;scheme=https;package=com.android.chrome;end;";
       } else if (ua.indexOf("iphone") > -1 || ua.indexOf("ipad") > -1) {
         // iOS: Eğer Chrome yüklüyse, özel URL şeması ile açmayı dene
-        window.location.href = "googlechrome://dioraff.site/links/?btag=2334604".replace("https://", "googlechrome://").replace("http://", "googlechrome://");
+        window.location.href = "googlechrome://www.diorlink.com/links/?btag=2334604".replace("https://", "googlechrome://").replace("http://", "googlechrome://");
 
         // Chrome yüklü değilse fallback olarak normal URL'ye yönlendir (1 saniye sonra)
         setTimeout(function() {
